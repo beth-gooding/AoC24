@@ -62,7 +62,7 @@ const dayTwoSolution = async () => {
                 currentLevelRemovedReport.push(singleReport[j]);
             }
 
-            console.log("current: ", currentLevelRemovedReport)
+            // console.log("current: ", currentLevelRemovedReport)
             let {isReportSafe, _} = isReportSafeChecker(currentLevelRemovedReport);
 
             if (isReportSafe) {
@@ -79,7 +79,7 @@ const dayTwoSolution = async () => {
                 nextLevelRemovedReport.push(singleReport[j]);
             }
 
-            console.log("next: ", nextLevelRemovedReport);
+            // console.log("next: ", nextLevelRemovedReport);
              ({isReportSafe, _} = isReportSafeChecker(nextLevelRemovedReport));
             if (isReportSafe) {
                 isReportSafeWithDampenerCount++;
